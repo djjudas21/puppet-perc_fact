@@ -1,0 +1,15 @@
+{
+  "name": "jgazeley/perc_fact",
+  "version": "0.1.0",
+  "author": "jgazeley",
+  "summary": "Custom fact for reporting info about Dell RAID arrays via OpenManage",
+  "license": "Apache-2.0",
+  "source": "https://github.com/djjudas21/puppet-perc_fact",
+  "project_page": "https://github.com/djjudas21/puppet-perc_fact",
+  "issues_url": "https://github.com/djjudas21/puppet-perc_fact/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
