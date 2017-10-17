@@ -1,6 +1,6 @@
 Facter.add(:perc) do
 	confine :manufacturer => 'Dell Inc.'
-	confine { Facter::Core::Execution.exists('/opt/dell/srvadmin/bin/omreport') }
+	confine { File.file?('/opt/dell/srvadmin/bin/omreport') }
 	setcode do
 		# Split output into lines
 		lines = %x{/opt/dell/srvadmin/bin/omreport storage vdisk -fmt ssv | grep ';'}.lines
